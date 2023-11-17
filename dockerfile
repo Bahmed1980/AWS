@@ -1,6 +1,6 @@
 FROM  centos:latest
 MAINTAINER  bidemiahmed5@gmail.com
-sudo apt-get install -y httpd \
+sudo yum install -y httpd \
 zip\
 unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/wwww/htmt/
