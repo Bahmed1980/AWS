@@ -1,6 +1,6 @@
 FROM  ubuntu:latest
 LABEL maintainer=bidemiahmed5@gmail.com
-RUN apk --no-cache add apache2
+RUN apt-get install apache2
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/wwww/htmt/
 WORKDIR /var/www/html/
 RUN unzip photogenic.zip
