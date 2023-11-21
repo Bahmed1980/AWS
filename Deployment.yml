@@ -17,4 +17,4 @@ spec:
             image: bahme1980/pipeline_demo 
             image policy: Always
             port:
-             - containerPort: 80
+             - containerPort: 80 8080
