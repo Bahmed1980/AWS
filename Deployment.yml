@@ -1,20 +1,20 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-    name: bidemi
+   name: bidemi
 spec:
     replicas: 2
-    selector:      # tells the controller which pods to watch/belong to
-    matchLabels: 
+    selector:   # tells the controller which pods to watch/belong to
+     matchLabels: 
       app: bidemi
    template:
       metadata:
         labels:
           app: bidemi
       spec:
-        containers:
-          - name: bidemi
-            image: bahme1980/pipeline_demo 
-            image policy: Always
-            port:
-             - containerPort: 80 
+       containers:
+        - name: bidemi
+          image: bahme1980/pipeline_demo 
+          image policy: Always
+          port:
+          - containerPort: 80
