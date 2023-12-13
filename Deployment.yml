@@ -15,6 +15,6 @@ spec:
        containers:
         - name: bidemi
           image: bahme1980/pipeline_demo 
-          image policy: Always
-          port:
+          imagePullPolicy: Always
+          ports:
           - containerPort: 80
