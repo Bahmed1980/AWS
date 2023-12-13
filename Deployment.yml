@@ -6,11 +6,11 @@ spec:
     replicas: 2
     selector:      # tells the controller which pods to watch/belong to
     matchLabels: 
-      app: bidemi
+      app: mrdevops
    template:
       metadata:
         labels:
-          app: bidemi
+          app: mrdevops
       spec:
         containers:
           - name: bidemi
