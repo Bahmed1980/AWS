@@ -4,7 +4,7 @@ metadata:
     name: bidemi
 spec:
     replicas: 2
-    selector:   
+    selector:      # tells the controller which pods to watch/belong to
     matchLabels: 
       app: bidemi
    template:
