@@ -1,6 +1,10 @@
 - hosts: all
-  become: true
+  become: false
   tasks:
+      #- name: delete old deployment
+      #  command: kubectl delet -f /home/ubuntu/Deplyment.yml
+     # - name: delete old sevices
+      #  command: kubectl delete -f /home/ubuntu/Service.yml
      - name: create new deploymnet
        command: kubectl apply -f /home/ubuntu/Deployment.yml
      - name: create new service
