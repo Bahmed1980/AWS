@@ -6,7 +6,7 @@ metadata:
     app: bidemi
 spec:
   ports: 
-    - port: 8080   # Containers port esposed 
+    - port: 80   # Containers port esposed 
       targetPort: 80  # Pods port
       nodePort: 31200
   selector:
