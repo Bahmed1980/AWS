@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: bidemi
+   name: bahmed1980
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
@@ -13,7 +13,7 @@ spec:
           app: bidemi
       spec:
        containers:
-        - name: bidemi
+        - name: bahmed1980
           image: bahme1980/pipeline_demo 
           imagePullPolicy: Always
           ports:
