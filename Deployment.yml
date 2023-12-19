@@ -14,7 +14,7 @@ spec:
       spec:
        containers:
         - name: bahmed1980
-          image: bahme1980/pipeline_demo 
+          image: bahme1980/pipeline_demo:latest
           imagePullPolicy: Always
           ports:
           - containerPort: 80
