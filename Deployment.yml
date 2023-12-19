@@ -16,8 +16,6 @@ spec:
         - name: bahmed1980
           image: bahme1980/pipeline_demo:latest
           imagePullPolicy: Always
-      imagePullSecrets:
-           - name:my-registry-secret
           ports:
           - containerPort: 80
        
